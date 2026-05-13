@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uber Eats</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-main">
+          <div>UBER<span class="eats"> EATS</span></div>
+          <div class="header-actions">
+            <button class="header-button">Войти</button>
+            <img src="images/basket.svg" class="basket" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <form>
+          <input
+            type="text"
+            placeholder="Поиск по ресторанам и кухням"
+            class="search-input"
+          />
+        </form>
+
+        <h2 class="title">Рестораны в Москве</h2>
+
+        <div class="cards">
+          <div class="card">
+            <figure>
+              <img src="images/Macdonalds.png" alt="McDonald's" />
+              <figcaption>
+                <h3 class="restaurants-name">Макдоналдс - Газетный</h3>
+                <p class="price-kitchen">&#8381;&#8381; &#8226; Бургеры</p>
+                <p class="waiting-time">25 - 30 мин</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="card">
+            <figure>
+              <img src="images/DimSum.png" alt="DimSum" />
+              <figcaption>
+                <h3 class="restaurants-name">DimSum & Co - ЦДМ</h3>
+                <p class="price-kitchen">
+                  ₽ • Японская • Китайская • Азиатская
+                </p>
+                <p class="waiting-time">40 - 50 мин</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="card">
+            <figure>
+              <img src="images/Dvizhok.png" alt="Dvizhok" />
+              <figcaption>
+                <h3 class="restaurants-name">ДвижОК - Манежная</h3>
+                <p class="price-kitchen">₽ • Американская • Европейская</p>
+                <p class="waiting-time">35 - 45 мин</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="card">
+            <figure>
+              <img src="images/Nya.png" alt="Nya - NHA" />
+              <figcaption>
+                <h3 class="restaurants-name">НЯ - NHA</h3>
+                <p class="price-kitchen">₽₽ • Вьетнамская</p>
+                <p class="waiting-time">30 - 40 мин</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="card">
+            <figure>
+              <img src="images/Dzi.png" alt="Point Dzi" />
+              <figcaption>
+                <h3 class="restaurants-name">Точка Дзы - Цветной</h3>
+                <p class="price-kitchen">₽₽ • Вьетнамская</p>
+                <p class="waiting-time">40 - 50 мин</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="card">
+            <figure>
+              <img src="images/Cinnabon.png" alt="Cinnabon" />
+              <figcaption>
+                <h3 class="restaurants-name">Cinnabon</h3>
+                <p class="price-kitchen">₽ • Выпечка • Десерты • Капкейки</p>
+                <p class="waiting-time">25 - 35 мин</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="card">
+            <figure>
+              <img src="images/Pizzelove.png" alt="Pizzelove" />
+              <figcaption>
+                <h3 class="restaurants-name">PIZZELOVE</h3>
+                <p class="price-kitchen">₽₽ • Пицца</p>
+                <p class="waiting-time">15 - 25 мин</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="card">
+            <figure>
+              <img src="images/Ziu.png" alt="Ziu cafe" />
+              <figcaption>
+                <h3 class="restaurants-name">Zю кафе - Тверская</h3>
+                <p class="price-kitchen">₽₽ • Японская</p>
+                <p class="waiting-time">25 - 35 мин</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="card">
+            <figure>
+              <img src="images/Bbq.png" alt="Bar BQ Cafe" />
+              <figcaption>
+                <h3 class="restaurants-name">Bar BQ Cafe - Манежная</h3>
+                <p class="price-kitchen">₽₽₽ • Европейская</p>
+                <p class="waiting-time">30 - 40 мин</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-logo">
+          <a href="#">UBER <span class="footer-eats">EATS</span></a>
+        </div>
+        <hr />
+        <section class="footer-content">
+          <div class="footer-info">
+            <form action="">
+              <label for="language-select"></label>
+              <select name="language" id="language-select">
+                <option value="russian">&#x1F310; Русский</option>
+                <option value="english">&#x1F310; Английский</option>
+              </select>
+            </form>
+            <div class="social">
+              <p class="hashtag"><span class="hash">#</span>UberEats</p>
+              <div class="social-logo">
+                <img src="images/facebook.png" alt="" />
+                <img src="images/twitter.png" alt="" />
+                <img src="images/instagram.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <nav class="menu">
+            <ul class="list-menu">
+              <li><a href="#">Об UberEats</a></li>
+              <li><a href="#">Станьте партнером по доставке</a></li>
+              <li><a href="#">Станьте партнером-рестораном</a></li>
+            </ul>
+            <ul class="list-menu">
+              <li><a href="#">Все города</a></li>
+              <li><a href="#">Цены</a></li>
+              <li><a href="#">Помощь</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
