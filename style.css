@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background-color: #f498ad;
+}
+
 main {
   font-family: "Roboto", sans-serif;
 }
@@ -130,27 +134,22 @@ header {
 
 footer {
   background-color: #262626;
-  padding-top: 56px;
-  padding-bottom: 40px;
   font-family: Roboto, sans-serif;
+  color: #fff;
 }
 
 .footer-logo {
   font-family: "Inter", sans-serif;
   font-size: 28px;
   font-weight: 600;
-  color: #fff;
   letter-spacing: 0.2em;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
+  padding-top: 56px;
 }
 
 .footer-eats {
   color: #57ad56;
   font-weight: 100;
-}
-
-hr {
-  margin-bottom: 32px;
 }
 
 #language-select {
@@ -162,7 +161,6 @@ hr {
 }
 
 .hashtag {
-  color: #fff;
   font-size: 16px;
   margin-top: 33px;
   margin-bottom: 17px;
@@ -195,6 +193,8 @@ footer ul {
 
 .footer-content {
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 48px;
 }
 
 .footer-info {
@@ -213,6 +213,42 @@ footer ul {
   gap: 23px;
 }
 
+.footer-apps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 0px;
+}
+
+.app-store {
+  width: 120px;
+  height: 40px;
+}
+
+.google-play {
+  width: 135px;
+  height: 40px;
+}
+
+.footer-apps a {
+  display: flex;
+}
+
+.footer-bottom {
+  font-size: 11px;
+  display: flex;
+  padding: 40px 0px;
+}
+
+.footer-bottom li {
+  width: 33%;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 720px) {
   .footer-content {
     display: flex;
@@ -224,6 +260,16 @@ footer ul {
     display: flex;
     flex-direction: column;
     gap: 23px;
+  }
+
+  .app-store {
+    width: 108px;
+    height: 36px;
+  }
+
+  .google-play {
+    width: 124px;
+    height: 36px;
   }
 }
 
