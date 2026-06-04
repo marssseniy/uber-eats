@@ -271,6 +271,12 @@ footer ul {
     width: 124px;
     height: 36px;
   }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
