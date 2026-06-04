@@ -282,3 +282,29 @@ footer ul {
     grid-template-columns: 60% auto;
   }
 }
+
+.up-button {
+  position: fixed;
+
+  right: 16px;
+  bottom: 24px;
+
+  color: #fff;
+  background-color: #59bd5a;
+
+  height: 80px;
+  width: 80px;
+
+  border: none;
+  cursor: pointer;
+
+  font-size: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.up-arrow {
+  transform: translateY(-4px);
+}
