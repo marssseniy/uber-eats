@@ -4,11 +4,7 @@
   box-sizing: border-box;
 }
 
-::selection {
-  background-color: #f498ad;
-}
-
-main {
+body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -18,11 +14,25 @@ header {
   font-size: 17px;
   letter-spacing: 0.15em;
   padding: 16px 0px;
+  color: #000;
+}
+
+.container {
+  max-width: 1219px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .eats {
   color: green;
   font-weight: 500;
+}
+
+.header-logo a {
+  text-decoration: none;
+  color: #000;
 }
 
 .header-button {
@@ -34,7 +44,6 @@ header {
   font-size: 13px;
   line-height: 24px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
   border-radius: 8px;
   transition:
     transform 0.2s ease,
@@ -60,15 +69,6 @@ header {
   gap: 27px;
 }
 
-.container {
-  box-sizing: border-box;
-  max-width: 1219px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .header-main {
   display: flex;
   justify-content: space-between;
@@ -91,12 +91,21 @@ header {
   line-height: 34px;
 }
 
-.cards {
+.restaurant-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(308px, 1fr));
   gap: 15px;
   margin-top: 16px;
   margin-bottom: 80px;
+}
+
+.card {
+  padding-bottom: 20px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
 }
 
 .card img {
@@ -107,14 +116,18 @@ header {
   margin-bottom: 16px;
 }
 
-.restaurants-name {
+main ul {
+  list-style-type: none;
+}
+
+.restaurant-name {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #1d1d1d;
 }
 
-.price-kitchen {
+.restaurant-info {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -128,13 +141,8 @@ header {
   color: #1d1d1d;
 }
 
-.card {
-  padding-bottom: 20px;
-}
-
 footer {
   background-color: #262626;
-  font-family: Roboto, sans-serif;
   color: #fff;
 }
 
@@ -192,17 +200,13 @@ footer ul {
 }
 
 .footer-content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   padding-top: 32px;
   padding-bottom: 48px;
 }
 
-.footer-info {
-  width: 33%;
-}
-
 .menu {
-  width: 67%;
   display: grid;
   grid-template-columns: 50% auto;
 }
@@ -243,10 +247,6 @@ footer ul {
 
 .footer-bottom li {
   width: 33%;
-}
-
-.footer-bottom a {
-  text-decoration: none;
 }
 
 @media screen and (max-width: 720px) {
@@ -313,4 +313,8 @@ footer ul {
 
 .up-arrow {
   transform: translateY(-4px);
+}
+
+main a {
+  text-decoration: none;
 }

@@ -15,10 +15,14 @@
     <header>
       <div class="container">
         <div class="header-main">
-          <div>UBER<span class="eats"> EATS</span></div>
+          <div class="header-logo">
+            <a href="#">UBER <span class="eats">EATS</span></a>
+          </div>
           <div class="header-actions">
             <button class="header-button">Войти</button>
-            <img src="images/basket.svg" class="basket" />
+            <a href="#" class="basket">
+              <img src="images/basket.svg" alt="Корзина" />
+            </a>
           </div>
         </div>
       </div>
@@ -26,7 +30,7 @@
 
     <main>
       <div class="container">
-        <form>
+        <form action="#">
           <input
             type="text"
             placeholder="Поиск по ресторанам и кухням"
@@ -34,110 +38,136 @@
           />
         </form>
 
-        <h2 class="title">Рестораны в Москве</h2>
+        <section class="restaurants">
+          <h2 class="title">Рестораны в Москве</h2>
 
-        <div class="cards">
-          <div class="card">
-            <figure>
-              <img src="images/Macdonalds.png" alt="McDonald's" />
-              <figcaption>
-                <h3 class="restaurants-name">Макдоналдс - Газетный</h3>
-                <p class="price-kitchen">&#8381;&#8381; &#8226; Бургеры</p>
-                <p class="waiting-time">25 - 30 мин</p>
-              </figcaption>
-            </figure>
-          </div>
+          <ul class="restaurant-cards">
+            <li class="card">
+              <a href="#">
+                <figure>
+                  <img src="images/Macdonalds.png" alt="Ресторан Макдоналдс" />
+                  <figcaption>
+                    <h3 class="restaurant-name">Макдоналдс - Газетный</h3>
+                    <p class="restaurant-info">
+                      &#8381;&#8381; &#8226; Бургеры
+                    </p>
+                    <p class="waiting-time">25 - 30 мин</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
 
-          <div class="card">
-            <figure>
-              <img src="images/DimSum.png" alt="DimSum" />
-              <figcaption>
-                <h3 class="restaurants-name">DimSum & Co - ЦДМ</h3>
-                <p class="price-kitchen">
-                  ₽ • Японская • Китайская • Азиатская
-                </p>
-                <p class="waiting-time">40 - 50 мин</p>
-              </figcaption>
-            </figure>
-          </div>
+            <li class="card">
+              <a href="#">
+                <figure>
+                  <img src="images/DimSum.png" alt="Ресторан DimSum" />
+                  <figcaption>
+                    <h3 class="restaurant-name">DimSum & Co - ЦДМ</h3>
+                    <p class="restaurant-info">
+                      ₽ • Японская • Китайская • Азиатская
+                    </p>
+                    <p class="waiting-time">40 - 50 мин</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
 
-          <div class="card">
-            <figure>
-              <img src="images/Dvizhok.png" alt="Dvizhok" />
-              <figcaption>
-                <h3 class="restaurants-name">ДвижОК - Манежная</h3>
-                <p class="price-kitchen">₽ • Американская • Европейская</p>
-                <p class="waiting-time">35 - 45 мин</p>
-              </figcaption>
-            </figure>
-          </div>
+            <li class="card">
+              <a href="#">
+                <figure>
+                  <img src="images/Dvizhok.png" alt="Ресторан ДвижОК" />
+                  <figcaption>
+                    <h3 class="restaurant-name">ДвижОК - Манежная</h3>
+                    <p class="restaurant-info">
+                      ₽ • Американская • Европейская
+                    </p>
+                    <p class="waiting-time">35 - 45 мин</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
 
-          <div class="card">
-            <figure>
-              <img src="images/Nya.png" alt="Nya - NHA" />
-              <figcaption>
-                <h3 class="restaurants-name">НЯ - NHA</h3>
-                <p class="price-kitchen">₽₽ • Вьетнамская</p>
-                <p class="waiting-time">30 - 40 мин</p>
-              </figcaption>
-            </figure>
-          </div>
+            <li class="card">
+              <a href="#">
+                <figure>
+                  <img src="images/Nya.png" alt="Ресторан НЯ" />
+                  <figcaption>
+                    <h3 class="restaurant-name">НЯ - NHA</h3>
+                    <p class="restaurant-info">₽₽ • Вьетнамская</p>
+                    <p class="waiting-time">30 - 40 мин</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
 
-          <div class="card">
-            <figure>
-              <img src="images/Dzi.png" alt="Point Dzi" />
-              <figcaption>
-                <h3 class="restaurants-name">Точка Дзы - Цветной</h3>
-                <p class="price-kitchen">₽₽ • Вьетнамская</p>
-                <p class="waiting-time">40 - 50 мин</p>
-              </figcaption>
-            </figure>
-          </div>
+            <li class="card">
+              <a href="#">
+                <figure>
+                  <img src="images/Dzi.png" alt='Ресторан "Точка Дзы"' />
+                  <figcaption>
+                    <h3 class="restaurant-name">Точка Дзы - Цветной</h3>
+                    <p class="restaurant-info">₽₽ • Вьетнамская</p>
+                    <p class="waiting-time">40 - 50 мин</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
 
-          <div class="card">
-            <figure>
-              <img src="images/Cinnabon.png" alt="Cinnabon" />
-              <figcaption>
-                <h3 class="restaurants-name">Cinnabon</h3>
-                <p class="price-kitchen">₽ • Выпечка • Десерты • Капкейки</p>
-                <p class="waiting-time">25 - 35 мин</p>
-              </figcaption>
-            </figure>
-          </div>
+            <li class="card">
+              <a href="#">
+                <figure>
+                  <img src="images/Cinnabon.png" alt="Ресторан Cinnabon" />
+                  <figcaption>
+                    <h3 class="restaurant-name">Cinnabon</h3>
+                    <p class="restaurant-info">
+                      ₽ • Выпечка • Десерты • Капкейки
+                    </p>
+                    <p class="waiting-time">25 - 35 мин</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
 
-          <div class="card">
-            <figure>
-              <img src="images/Pizzelove.png" alt="Pizzelove" />
-              <figcaption>
-                <h3 class="restaurants-name">PIZZELOVE</h3>
-                <p class="price-kitchen">₽₽ • Пицца</p>
-                <p class="waiting-time">15 - 25 мин</p>
-              </figcaption>
-            </figure>
-          </div>
+            <li class="card">
+              <a href="#">
+                <figure>
+                  <img src="images/Pizzelove.png" alt="Ресторан Pizzelove" />
+                  <figcaption>
+                    <h3 class="restaurant-name">PIZZELOVE</h3>
+                    <p class="restaurant-info">₽₽ • Пицца</p>
+                    <p class="waiting-time">15 - 25 мин</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
 
-          <div class="card">
-            <figure>
-              <img src="images/Ziu.png" alt="Ziu cafe" />
-              <figcaption>
-                <h3 class="restaurants-name">Zю кафе - Тверская</h3>
-                <p class="price-kitchen">₽₽ • Японская</p>
-                <p class="waiting-time">25 - 35 мин</p>
-              </figcaption>
-            </figure>
-          </div>
+            <li class="card">
+              <a href="#">
+                <figure>
+                  <img src="images/Ziu.png" alt="Zю кафе на Тверской" />
+                  <figcaption>
+                    <h3 class="restaurant-name">Zю кафе - Тверская</h3>
+                    <p class="restaurant-info">₽₽ • Японская</p>
+                    <p class="waiting-time">25 - 35 мин</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
 
-          <div class="card">
-            <figure>
-              <img src="images/Bbq.png" alt="Bar BQ Cafe" />
-              <figcaption>
-                <h3 class="restaurants-name">Bar BQ Cafe - Манежная</h3>
-                <p class="price-kitchen">₽₽₽ • Европейская</p>
-                <p class="waiting-time">30 - 40 мин</p>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
+            <li class="card">
+              <a href="#">
+                <figure>
+                  <img src="images/Bbq.png" alt='Кафе "Bar BQ" на Манежной' />
+                  <figcaption>
+                    <h3 class="restaurant-name">Bar BQ Cafe - Манежная</h3>
+                    <p class="restaurant-info">₽₽₽ • Европейская</p>
+                    <p class="waiting-time">30 - 40 мин</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+          </ul>
+        </section>
       </div>
     </main>
 
@@ -147,10 +177,9 @@
           <a href="#">UBER <span class="footer-eats">EATS</span></a>
         </div>
         <hr />
-        <section class="footer-content">
+        <div class="footer-content">
           <div class="footer-info">
-            <form action="">
-              <label for="language-select"></label>
+            <form>
               <select name="language" id="language-select">
                 <option value="russian">&#x1F310; Русский</option>
                 <option value="english">&#x1F310; Английский</option>
@@ -159,9 +188,27 @@
             <div class="social">
               <p class="hashtag"><span class="hash">#</span>UberEats</p>
               <div class="social-logo">
-                <img src="images/facebook.png" alt="" />
-                <img src="images/twitter.png" alt="" />
-                <img src="images/instagram.png" alt="" />
+                <a
+                  href="https://www.facebook.com/UberEats/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="images/facebook.png" alt="Facebook" />
+                </a>
+                <a
+                  href="https://x.com/ubereats"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="images/twitter.png" alt="Twitter" />
+                </a>
+                <a
+                  href="https://www.instagram.com/ubereats"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="images/instagram.png" alt="Instagram" />
+                </a>
               </div>
             </div>
           </div>
@@ -178,19 +225,19 @@
               <li><a href="#">FAQs</a></li>
             </ul>
           </nav>
-        </section>
+        </div>
         <hr />
-        <section class="footer-apps">
+        <div class="footer-apps">
           <a href="#"
-            ><img src="images/appstore.png" alt="app_store" class="app-store"
+            ><img src="images/appstore.png" alt="App Store" class="app-store"
           /></a>
           <a href="#"
             ><img
               src="images/googleplay.png"
-              alt="google_play"
+              alt="Google Play"
               class="google-play"
           /></a>
-        </section>
+        </div>
         <hr />
         <ul class="footer-bottom">
           <li><a href="#">© 2017 Uber Technologies Inc.</a></li>
