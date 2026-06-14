@@ -206,7 +206,7 @@ footer ul {
   padding-bottom: 48px;
 }
 
-.menu {
+.footer-menu {
   display: grid;
   grid-template-columns: 50% auto;
 }
@@ -249,46 +249,6 @@ footer ul {
   width: 33%;
 }
 
-@media screen and (max-width: 720px) {
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-    gap: 39px;
-  }
-
-  .menu {
-    display: flex;
-    flex-direction: column;
-    gap: 23px;
-  }
-
-  .app-store {
-    width: 108px;
-    height: 36px;
-  }
-
-  .google-play {
-    width: 124px;
-    height: 36px;
-  }
-
-  .footer-bottom {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  #language-select {
-    width: 175px;
-  }
-
-  .menu {
-    grid-template-columns: 60% auto;
-  }
-}
-
 .up-button {
   position: fixed;
 
@@ -317,4 +277,252 @@ footer ul {
 
 main a {
   text-decoration: none;
+}
+
+.restaurant-background {
+  background-image: url("images/Pushkin-lg.png");
+  background-size: cover;
+  background-position: center center;
+  height: 364px;
+  padding: 80px 0px 80px 81px;
+}
+
+.restaurant-description {
+  padding: 38px 29px 0px 38px;
+  width: 389px;
+  height: 204px;
+  background-color: #fff;
+}
+
+.restaurant-header {
+  font-family: Roboto, sans-serif;
+  font-size: 36px;
+  color: #1d1d1d;
+  font-weight: 400;
+  margin-bottom: 54px;
+}
+
+.button-waiting-time {
+  color: #fff;
+  background-color: #262626;
+  width: 100px;
+  height: 32px;
+  border-radius: 16px;
+  border: none;
+}
+
+.description-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.restaurant-menu a {
+  text-decoration: none;
+  color: #626262;
+  font-size: 16px;
+}
+
+.restaurant-menu ul {
+  list-style-type: none;
+}
+
+.restaurant-menu {
+  padding: 32px 0px 29px;
+}
+
+.restaurant-menu-list {
+  display: flex;
+  gap: 40px;
+}
+
+.restaurant-menu li:first-child a {
+  color: #327430;
+}
+
+.food {
+  padding-top: 56px;
+  padding-bottom: 80px;
+}
+
+.food h2 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.food-header {
+  margin-bottom: 32px;
+}
+
+.food-name-first::after {
+  content: "Сельдь на бородинском хлебе";
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1d;
+  margin-bottom: 4px;
+}
+
+#mushrooms::after {
+  content: "Грибы маринованные";
+}
+
+#salo::after {
+  content: "Сало домашнее с горчицей";
+}
+
+#tonque::after {
+  content: "Язык говяжий с хреном";
+}
+
+.additional-description {
+  font-size: 13px;
+  line-height: 21px;
+  color: #626262;
+  margin-bottom: 58px;
+}
+
+.food-card {
+  border: #626262 solid 1px;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.food-description {
+  padding: 16px 0px 16px 16px;
+}
+
+.food-name {
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1d;
+  margin-bottom: 83px;
+}
+
+.food-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 49px;
+  column-gap: 16px;
+}
+
+@media screen and (max-width: 1000px) {
+  #language-select {
+    width: 175px;
+  }
+
+  .footer-menu {
+    grid-template-columns: 60% auto;
+  }
+
+  .restaurant-background {
+    padding: 80px 0px 80px 8px;
+    background-image: url("images/Pushkin-md.png");
+  }
+
+  .restaurant-description {
+    width: 432px;
+  }
+
+  .food-cards {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .food {
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+  }
+
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+  }
+
+  .app-store {
+    width: 108px;
+    height: 36px;
+  }
+
+  .google-play {
+    width: 124px;
+    height: 36px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .restaurant-background {
+    background-image: url("images/Pushkin-xs.png");
+    height: 255px;
+    margin-bottom: 100px;
+    padding: 131px 4px 0px 8px;
+  }
+
+  .restaurant-description {
+    width: 100%;
+    height: 180px;
+  }
+
+  .restaurant-menu {
+    display: none;
+  }
+
+  .food-cards {
+    gap: 16px;
+  }
+
+  .food-card {
+    height: 108px;
+  }
+
+  .additional-description {
+    margin-bottom: 16px;
+  }
+
+  .food-name {
+    margin-bottom: 41px;
+  }
+
+  .food-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 56px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .food-name-first::after {
+    content: "Сельдь на бородинском...";
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .food-name-first::after {
+    content: "Сельдь на...";
+  }
+
+  #mushrooms::after {
+    content: "Грибы маринов...";
+  }
+
+  #salo::after {
+    content: "Сало домашнее...";
+  }
+
+  #tonque::after {
+    content: "Язык говяжий...";
+  }
 }

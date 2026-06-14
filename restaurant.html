@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-main">
+          <div class="header-logo">
+            <a href="index.html">UBER <span class="eats">EATS</span></a>
+          </div>
+          <div class="header-actions">
+            <button class="header-button">Войти</button>
+            <a href="#" class="basket">
+              <img src="images/basket.svg" alt="Корзина" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="restaurant-background">
+        <div class="restaurant-description">
+          <h1 class="restaurant-header">Трактир «Пушкин»</h1>
+          <div class="description-button">
+            <p class="restaurant-info">₽₽₽ • Европейская</p>
+            <button class="button-waiting-time">40-50 мин</button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <nav class="restaurant-menu">
+          <ul class="restaurant-menu-list">
+            <li><a href="#">Закуски</a></li>
+            <li><a href="#">Салаты</a></li>
+            <li><a href="#">Супы</a></li>
+            <li><a href="#">Горячие блюда</a></li>
+            <li><a href="#">Гарниры</a></li>
+            <li><a href="#">Десерты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <hr />
+      <div class="container">
+        <section class="food">
+          <div class="food-header">
+            <h2>Закуски</h2>
+          </div>
+          <ul class="food-cards">
+            <li class="food-card">
+              <div class="food-description">
+                <p class="food-name-first"></p>
+                <p class="additional-description">С яйцом и огурцом</p>
+                <p class="food-price">240 ₽</p>
+              </div>
+              <img
+                src="images/herring.png"
+                alt="Селедка на бородинском хлебе"
+              />
+            </li>
+            <li class="food-card">
+              <div class="food-description">
+                <p class="food-name">Соленья ассорти</p>
+                <p class="food-price">300 ₽</p>
+              </div>
+              <img src="images/pickles.png" alt="Соленья ассорти" />
+            </li>
+            <li class="food-card">
+              <div class="food-description">
+                <p class="food-name" id="mushrooms"></p>
+                <p class="food-price">390 ₽</p>
+              </div>
+              <img src="images/mushrooms.png" alt="Грибы маринованные" />
+            </li>
+            <li class="food-card">
+              <div class="food-description">
+                <p class="food-name" id="salo"></p>
+                <p class="food-price">320 ₽</p>
+              </div>
+              <img src="images/salo.png" alt="Сало домашнее с горчицей" />
+            </li>
+            <li class="food-card">
+              <div class="food-description">
+                <p class="food-name">Малосольная семга</p>
+                <p class="food-price">320 ₽</p>
+              </div>
+              <img src="images/salmon.png" alt="Малосольная семга" />
+            </li>
+            <li class="food-card">
+              <div class="food-description">
+                <p class="food-name" id="tonque"></p>
+                <p class="food-price">350 ₽</p>
+              </div>
+              <img src="images/tonque.png" alt="Язык говяжий с хреном" />
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-logo">
+          <a href="#">UBER <span class="footer-eats">EATS</span></a>
+        </div>
+        <hr />
+        <div class="footer-content">
+          <div class="footer-info">
+            <form>
+              <select name="language" id="language-select">
+                <option value="russian">&#x1F310; Русский</option>
+                <option value="english">&#x1F310; Английский</option>
+              </select>
+            </form>
+            <div class="social">
+              <p class="hashtag"><span class="hash">#</span>UberEats</p>
+              <div class="social-logo">
+                <a
+                  href="https://www.facebook.com/UberEats/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="images/facebook.png" alt="Facebook" />
+                </a>
+                <a
+                  href="https://x.com/ubereats"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="images/twitter.png" alt="Twitter" />
+                </a>
+                <a
+                  href="https://www.instagram.com/ubereats"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="images/instagram.png" alt="Instagram" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <nav class="footer-menu">
+            <ul class="list-menu">
+              <li><a href="#">Об UberEats</a></li>
+              <li><a href="#">Станьте партнером по доставке</a></li>
+              <li><a href="#">Станьте партнером-рестораном</a></li>
+            </ul>
+            <ul class="list-menu">
+              <li><a href="#">Все города</a></li>
+              <li><a href="#">Цены</a></li>
+              <li><a href="#">Помощь</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </nav>
+        </div>
+        <hr />
+        <div class="footer-apps">
+          <a href="#"
+            ><img src="images/appstore.png" alt="App Store" class="app-store"
+          /></a>
+          <a href="#"
+            ><img
+              src="images/googleplay.png"
+              alt="Google Play"
+              class="google-play"
+          /></a>
+        </div>
+        <hr />
+        <ul class="footer-bottom">
+          <li><a href="#">© 2017 Uber Technologies Inc.</a></li>
+          <li><a href="#">Обработка персональных данных</a></li>
+          <li><a href="#">Пользовательское соглашение</a></li>
+        </ul>
+      </div>
+    </footer>
+    <button class="up-button"><span class="up-arrow">&#8593;</span></button>
+  </body>
+</html>
