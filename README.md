@@ -1,35 +1,13 @@
 # Uber Eats Clone
 
-Учебный frontend-проект, выполненный по мотивам интерфейса Uber Eats.
+A responsive multi-page website built with HTML & CSS.
 
-## Demo
+## Pages
 
-https://marssseniy.github.io/uber-eats/
+- Main page with restaurant listing
+- Restaurant page with menu
 
----
+## Features
 
-## Технологии
-
-- HTML5
-- CSS3
-- JavaScript
-
----
-
-## Что реализовано
-
-- адаптивная верстка
-- Flexbox и CSS Grid
-- hover-анимации
-- карточки ресторанов
-- footer navigation
-
----
-
-## Чему я научился
-
-- работе с Flexbox/Grid
-- адаптивной верстке
-- работе с Git и GitHub
-- деплою через GitHub Pages
-- организации структуры frontend-проекта
+- Responsive design (desktop / tablet / mobile)
+- CSS Grid & Flexbox layout
