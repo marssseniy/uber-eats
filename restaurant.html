@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
   </head>
@@ -32,9 +36,9 @@
       <div class="restaurant-background">
         <div class="restaurant-description">
           <h1 class="restaurant-header">Трактир «Пушкин»</h1>
-          <div class="description-button">
+          <div class="restaurant-details">
             <p class="restaurant-info">₽₽₽ • Европейская</p>
-            <button class="button-waiting-time">40-50 мин</button>
+            <span class="restaurant-waiting-time">40 - 50 мин</span>
           </div>
         </div>
       </div>
@@ -52,56 +56,56 @@
       </div>
       <hr />
       <div class="container">
-        <section class="food">
-          <div class="food-header">
+        <section class="snacks">
+          <div class="snacks-header">
             <h2>Закуски</h2>
           </div>
-          <ul class="food-cards">
-            <li class="food-card">
-              <div class="food-description">
-                <p class="food-name-first"></p>
+          <ul class="snacks-cards">
+            <li class="snacks-card">
+              <div class="snacks-description">
+                <p class="snacks-name">Сельдь на бородинском хлебе</p>
                 <p class="additional-description">С яйцом и огурцом</p>
-                <p class="food-price">240 ₽</p>
+                <p class="snacks-price">240 ₽</p>
               </div>
               <img
                 src="images/herring.png"
                 alt="Селедка на бородинском хлебе"
               />
             </li>
-            <li class="food-card">
-              <div class="food-description">
-                <p class="food-name">Соленья ассорти</p>
-                <p class="food-price">300 ₽</p>
+            <li class="snacks-card">
+              <div class="snacks-description">
+                <p class="snacks-name">Соленья ассорти</p>
+                <p class="snacks-price">320 ₽</p>
               </div>
               <img src="images/pickles.png" alt="Соленья ассорти" />
             </li>
-            <li class="food-card">
-              <div class="food-description">
-                <p class="food-name" id="mushrooms"></p>
-                <p class="food-price">390 ₽</p>
+            <li class="snacks-card">
+              <div class="snacks-description">
+                <p class="snacks-name">Грибы маринованные</p>
+                <p class="snacks-price">300 ₽</p>
               </div>
               <img src="images/mushrooms.png" alt="Грибы маринованные" />
             </li>
-            <li class="food-card">
-              <div class="food-description">
-                <p class="food-name" id="salo"></p>
-                <p class="food-price">320 ₽</p>
+            <li class="snacks-card">
+              <div class="snacks-description">
+                <p class="snacks-name">Сало домашнее с горчицей</p>
+                <p class="snacks-price">320 ₽</p>
               </div>
               <img src="images/salo.png" alt="Сало домашнее с горчицей" />
             </li>
-            <li class="food-card">
-              <div class="food-description">
-                <p class="food-name">Малосольная семга</p>
-                <p class="food-price">320 ₽</p>
+            <li class="snacks-card">
+              <div class="snacks-description">
+                <p class="snacks-name">Малосольная семга</p>
+                <p class="snacks-price">390 ₽</p>
               </div>
               <img src="images/salmon.png" alt="Малосольная семга" />
             </li>
-            <li class="food-card">
-              <div class="food-description">
-                <p class="food-name" id="tonque"></p>
-                <p class="food-price">350 ₽</p>
+            <li class="snacks-card">
+              <div class="snacks-description">
+                <p class="snacks-name">Язык говяжий с хреном</p>
+                <p class="snacks-price">350 ₽</p>
               </div>
-              <img src="images/tonque.png" alt="Язык говяжий с хреном" />
+              <img src="images/tongue.png" alt="Язык говяжий с хреном" />
             </li>
           </ul>
         </section>
@@ -116,12 +120,10 @@
         <hr />
         <div class="footer-content">
           <div class="footer-info">
-            <form>
-              <select name="language" id="language-select">
-                <option value="russian">&#x1F310; Русский</option>
-                <option value="english">&#x1F310; Английский</option>
-              </select>
-            </form>
+            <select name="language" id="language-select">
+              <option value="russian">&#x1F310; Русский</option>
+              <option value="english">&#x1F310; Английский</option>
+            </select>
             <div class="social">
               <p class="hashtag"><span class="hash">#</span>UberEats</p>
               <div class="social-logo">
