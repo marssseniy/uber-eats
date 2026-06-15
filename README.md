@@ -2,6 +2,8 @@
 
 A responsive multi-page website built with HTML & CSS.
 
+## [Live Demo](https://marssseniy.github.io/uber-eats/)
+
 ## Pages
 
 - Main page with restaurant listing
